@@ -17,8 +17,8 @@ public class Student extends  User{
 
 
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    private Set<Course> studentCourses = new HashSet<>();
+    @ManyToMany
+    private Set<Course> courses = new HashSet<>();
 
 
 
@@ -32,12 +32,12 @@ public class Student extends  User{
 
     }
 
-    public Set<Course> getStudentCourses() {
-        return studentCourses;
+    public Set<Course> getCourses() {
+        return courses;
     }
 
-    public void setStudentCourses(Set<Course> studentCourses) {
-        this.studentCourses = studentCourses;
+    public void setCourses(Set<Course> courses) {
+        this.courses = courses;
     }
 
     public LocalDate getBirthDate() {

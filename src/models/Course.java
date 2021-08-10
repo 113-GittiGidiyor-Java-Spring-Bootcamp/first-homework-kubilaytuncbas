@@ -23,7 +23,7 @@ public class Course {
     @Column(name="credit_score")
     private int creditScore;
 
-    @ManyToMany(mappedBy = "studentCourses")
+    @ManyToMany(mappedBy = "courses")
     private Set<Student> students = new HashSet<>();
 
     @ManyToOne

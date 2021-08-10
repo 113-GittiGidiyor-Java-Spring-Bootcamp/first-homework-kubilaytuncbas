@@ -11,7 +11,7 @@ public class Main {
 
     }
     private static  void saveTestData() {
-        Course course1 = new Course("JavaBackend", "", 10);
+        Course course1 = new Course("JavaBackend", "101", 10);
 
         Student student1 = new Student("Kubilay", "Kagıthane", LocalDate.of(1998, Month.FEBRUARY, 19), "Erkek");
 
@@ -19,7 +19,7 @@ public class Main {
 
         PermanentInstructor permanentInstructor1 = new PermanentInstructor("Koray", "istanbul", "549421876", 10000);
 
-        student1.getStudentCourses().add(course1);
+        student1.getCourses().add(course1);
         course1.getStudents().add(student1);
         permanentInstructor1.getCourseList().add(course1);
         visitingResearcher1.getCourseList().add(course1);
