@@ -1,3 +1,5 @@
+package client;
+
 import controller.CourseController;
 import models.*;
 import utils.EntityManagerUtils;
