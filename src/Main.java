@@ -1,3 +1,4 @@
+import controller.CourseController;
 import models.*;
 import utils.EntityManagerUtils;
 
@@ -8,6 +9,8 @@ import java.time.Month;
 public class Main {
     public static void main(String[] args) {
         saveTestData();
+        CourseController courseController=new CourseController();
+        courseController.deleteCourse(1);
 
     }
     private static  void saveTestData() {
